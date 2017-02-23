@@ -1,0 +1,2 @@
+mdr 文件架名字
+vim readme.text  创建文件且打开编辑, 输入:wq可以直接保存
