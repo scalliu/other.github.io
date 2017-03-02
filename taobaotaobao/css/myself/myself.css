@@ -1,0 +1,266 @@
+@charset "utf-8";
+.clearF {
+  z-zoom: 1;
+  /*为兼容IE6,IE7*/
+}
+.clearF:after {
+  content: ".";
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.marA {
+  margin: 0 auto;
+}
+.common-fixNav {
+  position: absolute;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  z-index: 33;
+  background: #fe5400;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.common-fixNav > .header {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  left: 0.15625rem;
+  transform: translate(0, -50%);
+  width: 1.63rem;
+}
+.common-fixNav > .article {
+  margin: 0 auto;
+  width: 6.09375rem;
+  height: 100%;
+}
+.common-fixNav > .article > .formdiv {
+  margin-top: 0.1875rem;
+  line-height: 0.78125rem;
+  background: #b52600;
+  color: #ffffff;
+  text-align: center;
+}
+.common-fixNav > .footer {
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.common-fixNav > .footer > a {
+  font-size: 0.5rem;
+  color: #ffffff;
+}
+.common-fixFooterNav {
+  position: fixed;
+  z-index: 33;
+  bottom: 0;
+  width: 100%;
+  height: 1.25rem;
+  background: white;
+}
+.common-fixFooterNav > main {
+  display: flex;
+}
+.common-fixFooterNav > main > li {
+  flex: 1 1 2rem;
+  text-align: center;
+}
+.common-fixFooterNav > main > li > a {
+  display: block;
+}
+.common-fixFooterNav > main > li > a > img {
+  width: 80%;
+}
+.common-fixNavOther {
+  position: fixed;
+  height: 1.40625rem;
+  width: 100%;
+  border-bottom: 1px solid #666666;
+}
+.common-fixNavOther > .header {
+  position: absolute;
+  height: 80%;
+  top: 50%;
+  left: 0.15625rem;
+  transform: translate(0, -50%);
+  width: 0.65625rem;
+  border: 10px;
+  background: url("../image/jd-sprites.png") no-repeat -0.825rem 0.125rem;
+  background-size: 7.8125rem;
+}
+.common-fixNavOther > .article {
+  margin: 0 auto;
+  width: 7.1875rem;
+  height: 1.03125rem;
+  margin-top: 0.15625rem;
+}
+.common-fixNavOther > .article > form {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.common-fixNavOther > .article > form input {
+  border: 1px solid #666666;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.125rem;
+  vertical-align: top;
+  font-size: 0.34375rem;
+  padding-left: 0.46875rem;
+}
+.common-fixNavOther .footer {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  height: 100%;
+  width: 0.90625rem;
+}
+.common-fixNavOther .footer > a {
+  height: 100%;
+  display: block;
+  background: url("../image/jd-sprites.png") no-repeat -2.325rem 0.325rem;
+  background-size: 7.8125rem;
+}
+.myself-header {
+  position: relative;
+  margin-bottom: 0.3125rem;
+}
+.myself-header > .bgImg {
+  height: 3.125rem;
+  width: 100%;
+  background: url("../../image/selfbg.jpg") no-repeat center center;
+}
+.myself-header > .headerImg {
+  position: absolute;
+  top: 2.09375rem;
+  left: 0.3125rem;
+  width: 2.03125rem;
+  height: 2.03125rem;
+  background: url("../../image/selfheader.jpg") no-repeat center center;
+  background-size: 100%;
+  border-radius: 50%;
+  z-index: 33;
+}
+.myself-header > .navItems {
+  display: flex;
+  height: 1.5625rem;
+  text-align: center;
+  background: white;
+}
+.myself-header > .navItems > li {
+  padding: 0.28125rem 0;
+  flex: 1 1 1.84375rem;
+}
+.myself-header > .navItems > li:nth-child(1) {
+  flex: 1 1 3.6875rem;
+}
+.myself-header > .navItems > li:nth-child(1) > a {
+  border: 0;
+  align-items: flex-end;
+  padding-left: 2.34375rem;
+}
+.myself-header > .navItems > li > a {
+  display: flex;
+  border-left: 1px solid #e7e7e7;
+  flex-direction: column;
+  align-items: center;
+}
+.myself-header > .navItems > li > a > span {
+  flex: 1 1;
+  width: 100%;
+  text-align: center;
+  font-size: 0.4375rem;
+  color: #000000;
+}
+.myself-nav {
+  background: white;
+}
+.myself-nav > .nav-itemsWrap {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0.3125rem 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+.myself-nav > .nav-itemsWrap > .items {
+  flex: 1 1 1.90625rem;
+  text-align: center;
+}
+.myself-nav > .nav-itemsWrap > .items > a {
+  display: block;
+}
+.myself-nav > .nav-itemsWrap > .items > a > i {
+  display: block;
+  font-size: 0.78125rem;
+  margin-top: -0.0625rem;
+  padding: 0 0.25rem;
+}
+.myself-nav > .orders > a.ordersInfo {
+  height: 1.03125rem;
+  display: block;
+  line-height: 1.03125rem;
+}
+.myself-nav > .orders > a.ordersInfo > i {
+  float: left;
+  font-size: 0.78125rem;
+  margin-top: -0.0625rem;
+  padding: 0 0.25rem;
+}
+.myself-nav > .orders > a.ordersInfo > span:nth-of-type(1) {
+  float: left;
+  font-size: 0.5rem;
+  color: #000000;
+}
+.myself-nav > .orders > a.ordersInfo > span:nth-of-type(2) {
+  float: right;
+  margin-right: 0.125rem;
+}
+section.core-entry {
+  margin-top: 0.375rem;
+  background: white;
+}
+section.core-entry > ul.core-entry-itemsWrap > li.items {
+  border-bottom: 1px solid #e7e7e7;
+}
+section.core-entry > ul.core-entry-itemsWrap > li.items > a {
+  display: block;
+  height: 1rem;
+  line-height: 1rem;
+}
+section.core-entry > ul.core-entry-itemsWrap > li.items > a > i {
+  float: left;
+  font-size: 0.78125rem;
+  margin-top: -0.0625rem;
+  padding: 0 0.25rem;
+}
+section.core-entry > ul.core-entry-itemsWrap > li.items > a > span:nth-of-type(1) {
+  float: left;
+  font-size: 0.5rem;
+  color: #000000;
+}
+section.core-entry > ul.core-entry-itemsWrap > li.items > a > span:nth-of-type(2) {
+  float: right;
+  margin-right: 0.125rem;
+}
+footer.myself-footer {
+  display: flex;
+  margin-top: 0.3125rem;
+  height: 35px;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+footer.myself-footer > a:nth-child(1) {
+  flex: 2 1 2.34375rem;
+  border-left: 0;
+  text-align: right;
+  padding: 0 0.625rem;
+}
+footer.myself-footer > a {
+  flex: 0 1 2.34375rem;
+  text-align: center;
+  border-left: 1px solid #e7e7e7;
+  color: #000000;
+  font-size: 0.5rem;
+}
